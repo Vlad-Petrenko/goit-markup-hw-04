@@ -18,8 +18,8 @@ body {
 }
 
 img {
-   display: block;
-   max-width: 100%;
+  display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -142,14 +142,41 @@ img {
   margin-right: 0;
 }
 
+.auth-icon-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.auth-icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /* -------------------------Hero-------------- */
 .hero {
-  text-align: center;
+  /* text-align: center;
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 200px;  */
   background-color: var(--background-black);
 }
 
+.overlay {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(./images/bgi.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .hero-title {
   margin: 0 auto 30px auto;
   width: 700px;
@@ -230,6 +257,8 @@ img {
 .our-team-section .item {
   margin-right: 30px;
   background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .our-team-section .item:last-child {
@@ -313,6 +342,7 @@ img {
 .filter .list .button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .filter-button {
@@ -332,6 +362,13 @@ img {
   background-color: var(--white-color);
   /* border: 1px solid #ececec; */
 }
+
+.filter .portfolio .item:hover,
+.filter .portfolio .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .filter .portfolio .title {
   color: var(--title-text-color);
   font-size: 18px;

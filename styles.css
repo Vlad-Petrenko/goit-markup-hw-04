@@ -8,6 +8,8 @@
   --background-button: #f5f4fa;
   --background-portfolio-gray: #f6f6f6;
   --border-gray-color: #eeeeee;
+  --icon-gray-color: #afb1b8;
+  --icon-gray-footer: #44454e;
 }
 
 body {
@@ -240,7 +242,7 @@ img {
   line-height: 1.71;
 }
 
-.feature-list-bgc{
+.feature-list-bgc {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,7 +287,7 @@ img {
 }
 
 .our-team-text {
-  padding: 30px 0;
+  padding-top: 30px;
 }
 
 .our-team .name {
@@ -304,12 +306,84 @@ img {
   line-height: 1.2;
   text-align: center;
 }
+.networks {
+  display: flex;
+  margin: 16px 30px 32px 30px;
+}
+.networks-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+.networks-link {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--icon-gray-color);
+}
+
+.networks-link:hover,
+.networks-link:focus,
+.social .networks-link:hover,
+.social .networks-link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.networks-icons {
+  fill: currentColor;
+  height: 20px;
+}
+
+.networks-item:last-child {
+  margin-right: 0px;
+}
+
+/* -------------------Clients------------------ */
+
+.clients-list {
+  display: flex;
+}
+.clients-item {
+  margin-right: 30px;
+}
+.clients-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-gray-color);
+  border: solid 1px var(--icon-gray-color);
+  border-radius: 4px;
+}
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border: solid 1px var(--accent-color);
+}
+.clients-item:last-child {
+  margin-right: 0px;
+}
+
+.clients-icon {
+  fill: currentColor;
+  /* width: 106px;
+  height: 60px; */
+}
 /* ------------------Footer------------------------- */
 
 .footer {
   background-color: var(--background-black);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer-div {
+  display: flex;
 }
 .address {
   font-size: 14px;
@@ -335,6 +409,28 @@ img {
   color: var(--white-color);
 }
 
+.social {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
+.footer-network {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin: 0 0 20px 0;
+  padding: 0px;
+}
+
+.social .networks {
+  margin: 0;
+}
+.social .networks-link {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: var(--icon-gray-footer);
+}
 /* --------------Porfolio-------------------- */
 
 .filter-button .button {
